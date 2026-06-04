@@ -1,93 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bar 8 AM - Premium cocktails, mocktails, wines, and beers in Ōmiya, Japan">
-    <meta name="keywords" content="bar, cocktails, mocktails, wines, beers, Ōmiya, Japan">
-    <title>Bar 8 AM - Home</title>
+    <meta name="description" content="Bar 8 AM bilingual online menu">
+    <meta name="keywords" content="bar, cocktails, mocktails, wines, beers, Omiya, Japan, bilingual menu">
+    <title>Bar 8 AM</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpeg" href="images/Bar_8_AM.jpg">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body data-page="home">
     <div class="page-container">
-        <!-- Background -->
-        <img src="images/Background.jpg" alt="Bar background" class="background-image">
+        <img src="images/Background.jpg" alt="" class="background-image" data-i18n-alt="images.background">
         <div class="background-overlay"></div>
-        
-        <!-- Title Banner -->
-        <header class="title-banner">
-            <h1 class="title-logo">Bar 8 AM</h1>
-        </header>
-        
-        <!-- Navigation Buttons -->
-        <nav class="nav-buttons">
-            <a href="cocktails.html" class="nav-button">
-                <span>Cocktails</span>
-            </a>
-            <a href="mocktails.html" class="nav-button">
-                <span>Mocktails</span>
-            </a>
-            <a href="wines.html" class="nav-button">
-                <span>Wines</span>
-            </a>
-            <a href="beers.html" class="nav-button">
-                <span>Beers</span>
-            </a>
-        </nav>
-        
-        <!-- Best Sellers Section -->
-        <section class="section-banner">
-            <h2 class="section-title">Best Sellers</h2>
-        </section>
-        
-        <!-- Best Seller 1: Margarita -->
-        <article class="beverage-banner">
-            <img src="images/Margarita.jpg" alt="Margarita" class="beverage-image">
-            <div class="beverage-text">
-                <h3 class="beverage-name">Margarita</h3>
-                <p class="beverage-description">A refreshing blend of tequila, fresh lime juice, and triple sec, served in a salt-rimmed glass. The perfect balance of tangy citrus and smooth agave.</p>
-            </div>
-        </article>
-        
-        <!-- Best Seller 2: Virgin Mojito -->
-        <article class="beverage-banner reverse">
-            <img src="images/Virgin_Mojito.jpg" alt="Virgin Mojito" class="beverage-image">
-            <div class="beverage-text text-right">
-                <h3 class="beverage-name">Virgin Mojito</h3>
-                <p class="beverage-description">A crisp and refreshing mocktail featuring muddled fresh mint, lime, and a splash of soda water—all the flavor without the spirits.</p>
-            </div>
-        </article>
-        
-        <!-- Best Seller 3: Cabernet Sauvignon -->
-        <article class="beverage-banner">
-            <img src="images/Cabernet_Sauvignon.jpg" alt="Cabernet Sauvignon" class="beverage-image">
-            <div class="beverage-text">
-                <h3 class="beverage-name">Cabernet Sauvignon</h3>
-                <p class="beverage-description">A full-bodied red wine with bold flavors of blackcurrant and subtle hints of oak. Pairs beautifully with rich dishes and quiet evenings.</p>
-            </div>
-        </article>
-        
-        <!-- Best Seller 4: Craft IPA -->
-        <article class="beverage-banner reverse">
-            <img src="images/Craft_Beer.jpg" alt="Craft IPA" class="beverage-image">
-            <div class="beverage-text text-right">
-                <h3 class="beverage-name">Craft IPA</h3>
-                <p class="beverage-description">A hoppy, aromatic beer bursting with citrus and pine notes. Perfectly balanced bitterness with a smooth finish—crafted for true beer lovers.</p>
-            </div>
-        </article>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2024 Bar 8 AM. All rights reserved.</p>
-        </footer>
-        
-        <!-- Logo Badge -->
-        <div class="logo-badge">
-            <a href="about-en.html">
-                <img src="images/Bar_8_AM.jpg" alt="Bar 8 AM Logo">
+
+        <div class="floating-controls">
+            <button class="language-toggle" type="button" data-language-toggle data-i18n-label="language.label">
+                <span data-i18n="language.toggle">EN</span>
+            </button>
+            <a href="about.html" class="logo-badge">
+                <img src="images/Bar_8_AM.jpg" alt="" data-i18n-alt="images.logo">
             </a>
         </div>
+
+        <header class="hero">
+            <div class="hero-inner">
+                <p class="eyebrow" data-i18n="home.eyebrow">大宮駅東口から徒歩圏内</p>
+                <h1 class="title-logo" data-i18n="home.title">Bar 8 AM</h1>
+                <p class="hero-copy" data-i18n="home.intro">仕事帰りの一杯から、友人との夜まで。定番カクテル、ノンアルコール、ワイン、ビールを日本語と英語で見られるオンラインメニューです。</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="action-button primary" data-i18n="home.ctaMenu">メニューを見る</a>
+                    <a href="about.html" class="action-button" data-i18n="home.ctaAccess">アクセス</a>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div>
+                    <span data-i18n="home.statusLabel">本日の案内</span>
+                    <strong data-i18n="home.statusValue">18:00-翌2:00 / 不定休</strong>
+                </div>
+                <div>
+                    <span data-i18n="home.addressLabel">アクセス</span>
+                    <strong data-i18n="home.addressValue">大宮駅東口エリア</strong>
+                </div>
+                <div>
+                    <span data-i18n="home.languageNote">JP / EN 切替対応</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-buttons" id="menu" aria-label="Main menu">
+            <a href="cocktails.html" class="nav-button">
+                <span data-i18n="nav.cocktails">カクテル</span>
+            </a>
+            <a href="mocktails.html" class="nav-button">
+                <span data-i18n="nav.mocktails">モクテル</span>
+            </a>
+            <a href="wines.html" class="nav-button">
+                <span data-i18n="nav.wines">ワイン</span>
+            </a>
+            <a href="beers.html" class="nav-button">
+                <span data-i18n="nav.beers">ビール</span>
+            </a>
+            <a href="about.html" class="nav-button">
+                <span data-i18n="nav.about">店舗情報</span>
+            </a>
+        </nav>
+
+        <main>
+            <section class="section-block">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="home.recommendationsEyebrow">人気メニュー</p>
+                    <h2 data-i18n="home.recommendations">おすすめ</h2>
+                    <p data-i18n="home.recommendationsIntro">初めての方にも選びやすい人気メニューです。</p>
+                </div>
+                <div class="feature-grid" data-recommendations></div>
+            </section>
+
+            <section class="quick-info">
+                <h2 data-i18n="home.quickInfoTitle">ご来店前に</h2>
+                <div class="quick-info-grid">
+                    <p data-i18n="home.quickInfoHours">営業時間: 18:00-翌2:00（不定休）</p>
+                    <p data-i18n="home.quickInfoAddress">場所: 大宮駅東口エリア</p>
+                    <p data-i18n="home.quickInfoContact">予約・最新情報はInstagramをご確認ください。</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="about.html" class="action-button primary" data-i18n="nav.about">店舗情報</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Bar%208AM%20Omiya%20Saitama" class="action-button" target="_blank" rel="noopener" data-i18n="about.mapsCta">Google Mapsを開く</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p data-i18n="footer.copyright">© 2026 Bar 8 AM. All rights reserved.</p>
+            <p data-i18n="footer.note">大宮のバー / 日本語・英語メニュー対応</p>
+        </footer>
     </div>
 </body>
 </html>

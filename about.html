@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bar 8 AM about and access">
+    <title>Bar 8 AM - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="images/Bar_8_AM.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="about">
+    <div class="page-container">
+        <img src="images/Background.jpg" alt="" class="background-image" data-i18n-alt="images.background">
+        <div class="background-overlay"></div>
+
+        <div class="floating-controls">
+            <button class="language-toggle" type="button" data-language-toggle data-i18n-label="language.label">
+                <span data-i18n="language.toggle">EN</span>
+            </button>
+            <a href="about.html" class="logo-badge">
+                <img src="images/Bar_8_AM.jpg" alt="" data-i18n-alt="images.logo">
+            </a>
+        </div>
+
+        <header class="page-header">
+            <div class="header-content">
+                <a href="index.html" class="home-button" aria-label="Home" data-i18n-label="nav.home">
+                    <span aria-hidden="true">⌂</span>
+                </a>
+                <div>
+                    <p class="eyebrow" data-i18n="nav.about">店舗情報</p>
+                    <h1 class="page-title" data-i18n="about.title">店舗情報</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-buttons compact" aria-label="Main menu">
+            <a href="cocktails.html" class="nav-button"><span data-i18n="nav.cocktails">カクテル</span></a>
+            <a href="mocktails.html" class="nav-button"><span data-i18n="nav.mocktails">モクテル</span></a>
+            <a href="wines.html" class="nav-button"><span data-i18n="nav.wines">ワイン</span></a>
+            <a href="beers.html" class="nav-button"><span data-i18n="nav.beers">ビール</span></a>
+            <a href="about.html" class="nav-button active"><span data-i18n="nav.about">店舗情報</span></a>
+        </nav>
+
+        <main class="page-content">
+            <section class="about-section">
+                <img src="images/Where.png" alt="" class="about-image map-image" data-i18n-alt="images.map" loading="lazy" decoding="async">
+                <div class="about-text">
+                    <p class="eyebrow" data-i18n="about.accessTitle">アクセス</p>
+                    <h2 class="about-title" data-i18n="about.introTitle">Bar 8 AMへようこそ</h2>
+                    <p data-i18n="about.introBody">Bar 8 AMは、大宮で落ち着いた時間を楽しめるバーです。</p>
+                    <ol class="directions-list">
+                        <li data-i18n="about.access1">大宮駅東口を出ます</li>
+                        <li data-i18n="about.access2">駅前通りを目印に徒歩約5分進みます</li>
+                        <li data-i18n="about.access3">ローソン付近を左折します</li>
+                        <li data-i18n="about.access4">Hotel Omiya付近、右手側の店舗をお探しください</li>
+                    </ol>
+                    <div class="contact-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Bar%208AM%20Omiya%20Saitama" class="action-button primary" target="_blank" rel="noopener" data-i18n="about.mapsCta">Google Mapsを開く</a>
+                        <a href="https://www.google.com/search?q=Bar+8AM+Omiya+Instagram" class="action-button" target="_blank" rel="noopener" data-i18n="about.instagramCta">Instagram</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-strip">
+                <article>
+                    <span data-i18n="about.hoursLabel">営業時間</span>
+                    <strong data-i18n="about.hoursValue">18:00-翌2:00（不定休）</strong>
+                </article>
+                <article>
+                    <span data-i18n="about.addressLabel">住所</span>
+                    <strong data-i18n="about.addressValue">大宮駅東口エリア / Google MapsでBar 8 AMを検索</strong>
+                </article>
+                <article>
+                    <span data-i18n="about.socialLabel">最新情報</span>
+                    <strong data-i18n="about.socialValue">Instagramで営業日・イベント情報をご確認ください</strong>
+                </article>
+            </section>
+
+            <section class="about-section reverse">
+                <img src="images/Owner.jpg" alt="" class="about-image tall" data-i18n-alt="images.owner" loading="lazy" decoding="async">
+                <div class="about-text">
+                    <p class="eyebrow" data-i18n="about.ownerEyebrow">ストーリー</p>
+                    <h2 class="about-subtitle" data-i18n="about.ownerTitle">オーナー紹介</h2>
+                    <p data-i18n="about.ownerBody1">オーナーのAkiraは、15年以上ミクソロジーに携わってきました。</p>
+                    <p class="quote" data-i18n="about.ownerBody2">一杯のドリンクには物語があります。</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p data-i18n="footer.copyright">© 2026 Bar 8 AM. All rights reserved.</p>
+            <p data-i18n="footer.note">大宮のバー / 日本語・英語メニュー対応</p>
+        </footer>
+    </div>
+</body>
+</html>

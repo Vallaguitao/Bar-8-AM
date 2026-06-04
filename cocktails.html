@@ -1,145 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bar 8 AM - Our signature cocktails menu">
+    <meta name="description" content="Bar 8 AM cocktail menu">
     <title>Bar 8 AM - Cocktails</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpeg" href="images/Bar_8_AM.jpg">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body data-page="menu" data-category="cocktails">
     <div class="page-container">
-        <!-- Background -->
-        <img src="images/Background.jpg" alt="Bar background" class="background-image">
+        <img src="images/Background.jpg" alt="" class="background-image" data-i18n-alt="images.background">
         <div class="background-overlay"></div>
-        
-        <!-- Sticky Navigation -->
-        <div class="sticky-nav">
-            <!-- Page Header -->
-            <header class="page-header">
-                <div class="header-content">
-                    <a href="index.html" class="home-button" aria-label="Go to Home">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                        </svg>
-                    </a>
-                    <h1 class="page-title">Cocktails</h1>
-                </div>
-            </header>
-            
-            <!-- Navigation Buttons -->
-            <nav class="nav-buttons">
-                <a href="cocktails.html" class="nav-button active">
-                    <span>Cocktails</span>
-                </a>
-                <a href="mocktails.html" class="nav-button">
-                    <span>Mocktails</span>
-                </a>
-                <a href="wines.html" class="nav-button">
-                    <span>Wines</span>
-                </a>
-                <a href="beers.html" class="nav-button">
-                    <span>Beers</span>
-                </a>
-            </nav>
-        </div>
-        
-        <!-- Drinks Grid -->
-        <main class="drinks-grid page-content">
-            <!-- Margarita -->
-            <div class="drink-card">
-                <img src="images/Margarita.jpg" alt="Margarita" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Margarita</h3>
-                    <p class="drink-card-desc">Tequila, lime juice, triple sec, salt rim</p>
-                </div>
-            </div>
-            
-            <!-- Old Fashioned -->
-            <div class="drink-card">
-                <img src="images/Old_Fashioned.jpg" alt="Old Fashioned" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Old Fashioned</h3>
-                    <p class="drink-card-desc">Bourbon, bitters, sugar, orange peel</p>
-                </div>
-            </div>
-            
-            <!-- Mojito -->
-            <div class="drink-card">
-                <img src="images/Mojito.jpg" alt="Mojito" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Mojito</h3>
-                    <p class="drink-card-desc">White rum, mint, lime, soda water</p>
-                </div>
-            </div>
-            
-            <!-- Martini -->
-            <div class="drink-card">
-                <img src="images/Martini.jpg" alt="Martini" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Martini</h3>
-                    <p class="drink-card-desc">Gin or vodka, dry vermouth, olive</p>
-                </div>
-            </div>
-            
-            <!-- Cosmopolitan -->
-            <div class="drink-card">
-                <img src="images/Cosmopolitan.jpg" alt="Cosmopolitan" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Cosmopolitan</h3>
-                    <p class="drink-card-desc">Vodka, triple sec, cranberry, lime</p>
-                </div>
-            </div>
-            
-            <!-- Whiskey Sour -->
-            <div class="drink-card">
-                <img src="images/Whiskey_Sour.jpg" alt="Whiskey Sour" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Whiskey Sour</h3>
-                    <p class="drink-card-desc">Whiskey, lemon juice, sugar, egg white</p>
-                </div>
-            </div>
-            
-            <!-- Piña Colada - FIXED FILENAME -->
-            <div class="drink-card">
-                <img src="images/Pina_Colada.jpg" alt="Piña Colada" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Piña Colada</h3>
-                    <p class="drink-card-desc">Rum, coconut cream, pineapple juice</p>
-                </div>
-            </div>
-            
-            <!-- Mai Tai -->
-            <div class="drink-card">
-                <img src="images/Mai_Tai.jpg" alt="Mai Tai" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Mai Tai</h3>
-                    <p class="drink-card-desc">Rum, lime, orgeat, orange curaçao</p>
-                </div>
-            </div>
-            
-            <!-- Negroni -->
-            <div class="drink-card">
-                <img src="images/Negroni.jpg" alt="Negroni" class="drink-card-image">
-                <div class="drink-card-content">
-                    <h3 class="drink-card-title">Negroni</h3>
-                    <p class="drink-card-desc">Gin, Campari, sweet vermouth</p>
-                </div>
-            </div>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2024 Bar 8 AM. All rights reserved.</p>
-        </footer>
-        
-        <!-- Logo Badge -->
-        <div class="logo-badge">
-            <a href="about-en.html">
-                <img src="images/Bar_8_AM.jpg" alt="Bar 8 AM Logo">
+
+        <div class="floating-controls">
+            <button class="language-toggle" type="button" data-language-toggle data-i18n-label="language.label">
+                <span data-i18n="language.toggle">EN</span>
+            </button>
+            <a href="about.html" class="logo-badge">
+                <img src="images/Bar_8_AM.jpg" alt="" data-i18n-alt="images.logo">
             </a>
         </div>
+
+        <div class="sticky-nav">
+            <header class="page-header">
+                <div class="header-content">
+                    <a href="index.html" class="home-button" aria-label="Home" data-i18n-label="nav.home">
+                        <span aria-hidden="true">⌂</span>
+                    </a>
+                    <div>
+                        <p class="eyebrow" data-i18n="nav.cocktails">カクテル</p>
+                        <h1 class="page-title" data-category-title>カクテル</h1>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="nav-buttons compact" aria-label="Menu categories">
+                <a href="cocktails.html" class="nav-button active"><span data-i18n="nav.cocktails">カクテル</span></a>
+                <a href="mocktails.html" class="nav-button"><span data-i18n="nav.mocktails">モクテル</span></a>
+                <a href="wines.html" class="nav-button"><span data-i18n="nav.wines">ワイン</span></a>
+                <a href="beers.html" class="nav-button"><span data-i18n="nav.beers">ビール</span></a>
+                <a href="about.html" class="nav-button"><span data-i18n="nav.about">店舗情報</span></a>
+            </nav>
+        </div>
+
+        <main class="menu-page">
+            <section class="menu-intro">
+                <p data-category-subtitle>定番から華やかな一杯まで。味わいタグで気分に合うものを探せます。</p>
+            </section>
+
+            <section class="menu-tools" aria-label="Menu search and filters">
+                <label for="menu-search" id="menu-search-label" data-i18n="menu.searchLabel">メニュー検索</label>
+                <input id="menu-search" type="search" data-menu-search data-i18n-placeholder="menu.searchPlaceholder" aria-labelledby="menu-search-label">
+                <div class="filter-row" data-filters></div>
+                <p class="menu-note" data-i18n="menu.taxNote">価格は目安です。正式な価格は店舗でご確認ください。</p>
+            </section>
+
+            <p class="empty-state" data-no-results hidden data-i18n="menu.noResults">条件に合うメニューがありません。</p>
+            <section class="drinks-grid page-content" data-menu-grid></section>
+        </main>
+
+        <footer class="footer">
+            <p data-i18n="footer.copyright">© 2026 Bar 8 AM. All rights reserved.</p>
+            <p data-i18n="footer.note">大宮のバー / 日本語・英語メニュー対応</p>
+        </footer>
     </div>
 </body>
 </html>
