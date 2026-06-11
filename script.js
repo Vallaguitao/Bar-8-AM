@@ -1,5 +1,13 @@
 const STORAGE_KEY = "bar8am-language";
 
+// Simple text content sanitizer to prevent XSS
+function sanitizeText(text) {
+  if (typeof text !== 'string') return text;
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
 const site = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Bar%208AM%20Omiya%20Saitama",
   instagramUrl: "#",
@@ -262,7 +270,6 @@ const i18n = {
 };
 
 // Drinks data loaded from external file for better caching
-const drinks = [
 const drinks = [
   {
     id: "margarita",
@@ -948,15 +955,15 @@ function renderRecommendations() {
 function renderFeaturedDrink(drink) {
   return `
     <article class="feature-card">
-      <img src="${drink.image}" alt="${localize(drink.name)}" loading="lazy" decoding="async">
+      <img src="${sanitizeText(drink.image)}" alt="${sanitizeText(localize(drink.name))}" loading="lazy" decoding="async">
       <div class="feature-card-body">
-        <div class="card-badge">${translate(`menu.${drink.badge || "staffPick"}`)}</div>
-        <h3>${localize(drink.name)}</h3>
-        <p>${localize(drink.description)}</p>
+        <div class="card-badge">${sanitizeText(translate(`menu.${drink.badge || "staffPick"}`))}</div>
+        <h3>${sanitizeText(localize(drink.name))}</h3>
+        <p>${sanitizeText(localize(drink.description))}</p>
         <div class="drink-meta-line">
-          <span>${drink.price}</span>
-          <span>${localize(drink.size)}</span>
-          <span>${drink.abv}</span>
+          <span>${sanitizeText(drink.price)}</span>
+          <span>${sanitizeText(localize(drink.size))}</span>
+          <span>${sanitizeText(drink.abv)}</span>
         </div>
       </div>
     </article>
@@ -974,7 +981,7 @@ function renderFilters(category) {
   filtersContainer.innerHTML = filters
     .map((filter) => {
       const active = filter === activeFilter ? " active" : "";
-      return `<button class="filter-chip${active}" type="button" data-filter="${filter}">${translate(`filters.${filter}`)}</button>`;
+      return `<button class="filter-chip${active}" type="button" data-filter="${sanitizeText(filter)}">${sanitizeText(translate(`filters.${filter}`))}</button>`;
     })
     .join("");
 
@@ -1036,31 +1043,31 @@ function renderMenu(category) {
 }
 
 function renderDrinkCard(drink) {
-  const badge = drink.badge ? `<span class="card-badge">${translate(`menu.${drink.badge}`)}</span>` : "";
-  const tags = drink.tags.map((tag) => `<span class="drink-tag">${translate(`filters.${tag}`)}</span>`).join("");
+  const badge = drink.badge ? `<span class="card-badge">${sanitizeText(translate(`menu.${drink.badge}`))}</span>` : "";
+  const tags = drink.tags.map((tag) => `<span class="drink-tag">${sanitizeText(translate(`filters.${tag}`))}</span>`).join("");
 
   return `
     <article class="drink-card">
-      <img src="${drink.image}" alt="${localize(drink.name)}" class="drink-card-image" loading="lazy" decoding="async">
+      <img src="${sanitizeText(drink.image)}" alt="${sanitizeText(localize(drink.name))}" class="drink-card-image" loading="lazy" decoding="async">
       <div class="drink-card-content">
         <div class="drink-card-topline">
           ${badge}
-          <span class="drink-price">${drink.price}</span>
+          <span class="drink-price">${sanitizeText(drink.price)}</span>
         </div>
-        <h3 class="drink-card-title">${localize(drink.name)}</h3>
-        <p class="drink-card-desc">${localize(drink.description)}</p>
+        <h3 class="drink-card-title">${sanitizeText(localize(drink.name))}</h3>
+        <p class="drink-card-desc">${sanitizeText(localize(drink.description))}</p>
         <dl class="drink-details">
           <div>
-            <dt>${translate("menu.sizeLabel")}</dt>
-            <dd>${localize(drink.size)}</dd>
+            <dt>${sanitizeText(translate("menu.sizeLabel"))}</dt>
+            <dd>${sanitizeText(localize(drink.size))}</dd>
           </div>
           <div>
-            <dt>${translate("menu.abvLabel")}</dt>
-            <dd>${drink.abv}</dd>
+            <dt>${sanitizeText(translate("menu.abvLabel"))}</dt>
+            <dd>${sanitizeText(drink.abv)}</dd>
           </div>
         </dl>
-        <p class="drink-ingredients"><strong>${translate("menu.ingredientsLabel")}:</strong> ${localize(drink.ingredients)}</p>
-        <p class="drink-recommendation"><strong>${translate("menu.recommendationLabel")}:</strong> ${localize(drink.recommendation)}</p>
+        <p class="drink-ingredients"><strong>${sanitizeText(translate("menu.ingredientsLabel"))}:</strong> ${sanitizeText(localize(drink.ingredients))}</p>
+        <p class="drink-recommendation"><strong>${sanitizeText(translate("menu.recommendationLabel"))}:</strong> ${sanitizeText(localize(drink.recommendation))}</p>
         <div class="drink-tags">${tags}</div>
       </div>
     </article>
