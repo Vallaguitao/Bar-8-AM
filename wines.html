@@ -8,17 +8,14 @@
     <title>Bar 8 AM - Wines</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="styles.css">
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpeg" href="images/Bar_8_AM.jpg">
     <script src="script.js" defer></script>
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body data-page="menu" data-category="wines">
     <div class="page-container">
         <img src="images/Background.jpg" alt="" class="background-image" data-i18n-alt="images.background">
         <div class="background-overlay"></div>
-
         <div class="floating-controls">
             <button class="language-toggle" type="button" data-language-toggle data-i18n-label="language.label">
                 <span data-i18n="language.toggle">EN</span>
@@ -27,7 +24,6 @@
                 <img src="images/Bar_8_AM.jpg" alt="" data-i18n-alt="images.logo">
             </a>
         </div>
-
         <div class="sticky-nav">
             <header class="page-header">
                 <div class="header-content">
@@ -40,7 +36,6 @@
                     </div>
                 </div>
             </header>
-
             <nav class="nav-buttons compact" aria-label="Menu categories">
                 <a href="cocktails.html" class="nav-button"><span data-i18n="nav.cocktails">カクテル</span></a>
                 <a href="mocktails.html" class="nav-button"><span data-i18n="nav.mocktails">モクテル</span></a>
@@ -49,23 +44,19 @@
                 <a href="about.html" class="nav-button"><span data-i18n="nav.about">店舗情報</span></a>
             </nav>
         </div>
-
         <main class="menu-page">
             <section class="menu-intro">
                 <p data-category-subtitle>軽めの白からしっかりした赤、乾杯用のスパークリングまで。</p>
             </section>
-
             <section class="menu-tools" aria-label="Menu search and filters">
                 <label for="menu-search" id="menu-search-label" data-i18n="menu.searchLabel">メニュー検索</label>
                 <input id="menu-search" type="search" data-menu-search data-i18n-placeholder="menu.searchPlaceholder" aria-labelledby="menu-search-label">
                 <div class="filter-row" data-filters></div>
                 <p class="menu-note" data-i18n="menu.taxNote">価格は目安です。正式な価格は店舗でご確認ください。</p>
             </section>
-
             <p class="empty-state" data-no-results hidden data-i18n="menu.noResults">条件に合うメニューがありません。</p>
             <section class="drinks-grid page-content" data-menu-grid></section>
         </main>
-
         <footer class="footer">
             <p data-i18n="footer.copyright">© 2026 Bar 8 AM. All rights reserved.</p>
             <p data-i18n="footer.note">大宮のバー / 日本語・英語メニュー対応</p>
