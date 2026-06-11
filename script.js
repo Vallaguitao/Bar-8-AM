@@ -889,7 +889,11 @@ function setLanguage(lang) {
 
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    element.textContent = translate(element.dataset.i18n);
+    const key = element.dataset.i18n;
+    const value = translate(key);
+    if (value) {
+      element.textContent = value;
+    }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
