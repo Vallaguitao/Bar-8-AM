@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "itemCount": 81,
+  "currency": {
+    "code": "JPY",
+    "symbol": "¥"
+  },
+  "menu": {
+    "cocktails": {
+      "label": "Cocktails",
+      "sections": {
+        "gin_base": {
+          "label": "Gin Base",
+          "items": [
+            {
+              "id": "cocktail-gin-and-tonic",
+              "english": "Gin and Tonic",
+              "japanese": "ジントニック",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-gin-buck",
+              "english": "Gin Buck",
+              "japanese": "ジンバック",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-gimlet",
+              "english": "Gimlet",
+              "japanese": "ギムレット",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-white-lady",
+              "english": "White Lady",
+              "japanese": "ホワイトレディ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-martini",
+              "english": "Martini",
+              "japanese": "マティーニ",
+              "price": 1600
+            }
+          ]
+        },
+        "vodka_base": {
+          "label": "Vodka Base",
+          "items": [
+            {
+              "id": "cocktail-salty-dog",
+              "english": "Salty Dog",
+              "japanese": "ソルティドッグ",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-screwdriver",
+              "english": "Screwdriver",
+              "japanese": "スクリュードライバー",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-kamikaze",
+              "english": "Kamikaze",
+              "japanese": "カミカゼ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-balalaika",
+              "english": "Balalaika",
+              "japanese": "バラライカ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-yukiguni",
+              "english": "Yukiguni",
+              "japanese": "雪国",
+              "price": 1600
+            }
+          ]
+        },
+        "rum_base": {
+          "label": "Rum Base",
+          "items": [
+            {
+              "id": "cocktail-cuba-libre",
+              "english": "Cuba Libre",
+              "japanese": "キューバリブレ",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-daiquiri",
+              "english": "Daiquiri",
+              "japanese": "ダイキリ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-mojito",
+              "english": "Mojito",
+              "japanese": "モヒート",
+              "price": 1500
+            },
+            {
+              "id": "cocktail-xyz",
+              "english": "XYZ",
+              "japanese": "XYZ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-pina-colada",
+              "english": "Piña Colada",
+              "japanese": "ピニャコラーダ",
+              "price": 1600
+            }
+          ]
+        },
+        "tequila_base": {
+          "label": "Tequila Base",
+          "items": [
+            {
+              "id": "cocktail-tequila-buck",
+              "english": "Tequila Buck",
+              "japanese": "テキーラバック",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-tequila-sunrise",
+              "english": "Tequila Sunrise",
+              "japanese": "テキーラサンライズ",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-margarita",
+              "english": "Margarita",
+              "japanese": "マルガリータ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-matador",
+              "english": "Matador",
+              "japanese": "マタドール",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-el-diablo",
+              "english": "El Diablo",
+              "japanese": "エル・ディアブロ",
+              "price": 1300
+            }
+          ]
+        },
+        "whisky_base": {
+          "label": "Whisky Base",
+          "items": [
+            {
+              "id": "cocktail-godfather",
+              "english": "Godfather",
+              "japanese": "ゴッドファザー",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-rusty-nail",
+              "english": "Rusty Nail",
+              "japanese": "ラスティ・ネイル",
+              "price": 1100
+            },
+            {
+              "id": "cocktail-old-fashioned",
+              "english": "Old Fashioned",
+              "japanese": "オールド・ファッション",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-manhattan",
+              "english": "Manhattan",
+              "japanese": "マンハッタン",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-sidecar",
+              "english": "Sidecar",
+              "japanese": "サイドカー",
+              "price": 1300
+            }
+          ]
+        },
+        "wine_base": {
+          "label": "Wine Base",
+          "items": [
+            {
+              "id": "cocktail-american-lemonade",
+              "english": "American Lemonade",
+              "japanese": "アメリカンレモネード",
+              "price": 1500
+            },
+            {
+              "id": "cocktail-wine-cooler",
+              "english": "Wine Cooler",
+              "japanese": "ワインクーラー",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-spritzer",
+              "english": "Spritzer",
+              "japanese": "スプリッツァー",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-kitty",
+              "english": "Kitty",
+              "japanese": "キティ",
+              "price": 1300
+            },
+            {
+              "id": "cocktail-kir",
+              "english": "Kir",
+              "japanese": "キール",
+              "price": 1300
+            }
+          ]
+        }
+      }
+    },
+    "non_alcoholic_cocktails": {
+      "label": "Non-Alcoholic Cocktails",
+      "items": [
+        {
+          "id": "non-alcoholic-cinderella",
+          "english": "Cinderella",
+          "japanese": "シンデレラ",
+          "price": 900
+        },
+        {
+          "id": "non-alcoholic-shirley-temple",
+          "english": "Shirley Temple",
+          "japanese": "シャーリーテンプル",
+          "price": 900
+        },
+        {
+          "id": "non-alcoholic-sunset-peach",
+          "english": "Sunset Peach",
+          "japanese": "サンセットピーチ",
+          "price": 900
+        },
+        {
+          "id": "non-alcoholic-virgin-sea-breeze",
+          "english": "Virgin Sea Breeze",
+          "japanese": "バージンシーブリーズ",
+          "price": 900
+        },
+        {
+          "id": "non-alcoholic-virgin-passion",
+          "english": "Virgin Passion",
+          "japanese": "バージンパッション",
+          "price": 900
+        }
+      ]
+    },
+    "juice_and_soft_drinks": {
+      "label": "Juice and Soft Drinks",
+      "items": [
+        {
+          "id": "soft-drink-orange",
+          "english": "Orange Juice",
+          "japanese": "オレンジ",
+          "price": 500
+        },
+        {
+          "id": "soft-drink-pineapple",
+          "english": "Pineapple Juice",
+          "japanese": "パイナップル",
+          "price": 500
+        },
+        {
+          "id": "soft-drink-cranberry",
+          "english": "Cranberry Juice",
+          "japanese": "クランベリー",
+          "price": 500
+        },
+        {
+          "id": "soft-drink-grapefruit",
+          "english": "Grapefruit Juice",
+          "japanese": "グレープフルーツ",
+          "price": 500
+        },
+        {
+          "id": "soft-drink-coca-cola",
+          "english": "Coca-Cola",
+          "japanese": "コカ・コーラ",
+          "price": 600
+        },
+        {
+          "id": "soft-drink-ginger-ale",
+          "english": "Ginger Ale",
+          "japanese": "ジンジャーエール",
+          "price": 600
+        },
+        {
+          "id": "soft-drink-soda-water",
+          "english": "Soda Water",
+          "japanese": "ソーダウォーター",
+          "price": 600
+        }
+      ]
+    },
+    "whisky": {
+      "label": "Whisky",
+      "sections": {
+        "islay": {
+          "label": "Islay",
+          "items": [
+            {
+              "id": "whisky-ardbeg-10",
+              "english": "Ardbeg 10 Years",
+              "japanese": "アードベッグ10年",
+              "price": 1500
+            },
+            {
+              "id": "whisky-laphroaig-10",
+              "english": "Laphroaig 10 Years",
+              "japanese": "ラフロイグ10年",
+              "price": 1500
+            },
+            {
+              "id": "whisky-lagavulin-16",
+              "english": "Lagavulin 16 Years",
+              "japanese": "ラガヴーリン16年",
+              "price": 1900
+            },
+            {
+              "id": "whisky-bowmore-12",
+              "english": "Bowmore 12 Years",
+              "japanese": "ボウモア12年",
+              "price": 1500
+            }
+          ]
+        },
+        "speyside_highland_scotch": {
+          "label": "Speyside, Highland and Scotch",
+          "items": [
+            {
+              "id": "whisky-macallan-12",
+              "english": "The Macallan 12 Years",
+              "japanese": "ザ・マッカラン12年",
+              "region": "Speyside",
+              "price": 1900
+            },
+            {
+              "id": "whisky-glenmorangie",
+              "english": "Glenmorangie",
+              "japanese": "グレンモーレンジ",
+              "region": "Highland",
+              "price": 1500
+            },
+            {
+              "id": "whisky-dewars",
+              "english": "Dewar's",
+              "japanese": "デュワーズ",
+              "region": "Scotch",
+              "price": 900
+            }
+          ]
+        },
+        "blended": {
+          "label": "Blended Whisky",
+          "items": [
+            {
+              "id": "whisky-canadian-club",
+              "english": "Canadian Club",
+              "japanese": "カナディアンクラブ",
+              "price": 900
+            },
+            {
+              "id": "whisky-chivas-mizunara-12",
+              "english": "Chivas Regal Mizunara 12 Years",
+              "japanese": "シーバスミズナラ12年",
+              "price": 1300,
+              "verification": {
+                "status": "inferred",
+                "note": "English product name was inferred from the Japanese menu text."
+              }
+            }
+          ]
+        },
+        "bourbon": {
+          "label": "Bourbon",
+          "items": [
+            {
+              "id": "whisky-makers-mark",
+              "english": "Maker's Mark",
+              "japanese": "メーカーズマーク",
+              "price": 1000
+            },
+            {
+              "id": "whisky-iw-harper-gold",
+              "english": "I.W. Harper Gold",
+              "japanese": "I.W.ハーパーゴールド",
+              "price": 1000
+            },
+            {
+              "id": "whisky-obscured-bourbon-1",
+              "english": null,
+              "japanese": null,
+              "price": 1000,
+              "verification": {
+                "status": "obscured",
+                "note": "The product name is blocked by the folder in the source image."
+              }
+            },
+            {
+              "id": "whisky-obscured-bourbon-2",
+              "english": null,
+              "japanese": null,
+              "price": 1600,
+              "verification": {
+                "status": "obscured",
+                "note": "The product name is blocked by the folder in the source image."
+              }
+            }
+          ]
+        },
+        "japanese_whisky": {
+          "label": "Japanese Whisky",
+          "items": [
+            {
+              "id": "whisky-hakushu-single-malt-nv",
+              "english": "Hakushu Single Malt NV",
+              "japanese": "白州シングルNV",
+              "price": 1500
+            },
+            {
+              "id": "whisky-hakushu-12",
+              "english": "Hakushu 12 Years",
+              "japanese": "白州12年",
+              "price": 1800
+            },
+            {
+              "id": "whisky-yamazaki-single-malt-nv",
+              "english": "Yamazaki Single Malt NV",
+              "japanese": "山崎シングルNV",
+              "price": 1500
+            },
+            {
+              "id": "whisky-yamazaki-12",
+              "english": "Yamazaki 12 Years",
+              "japanese": "山崎12年",
+              "price": 1800
+            },
+            {
+              "id": "whisky-hibiki",
+              "english": "Hibiki",
+              "japanese": "響",
+              "price": 1800
+            }
+          ]
+        }
+      }
+    },
+    "beer": {
+      "label": "Beer",
+      "items": [
+        {
+          "id": "beer-premium-malts-draft",
+          "english": "Premium Malt's Draft",
+          "japanese": "プレミアムモルツ（生）",
+          "price": 900
+        },
+        {
+          "id": "beer-corona",
+          "english": "Corona",
+          "japanese": "コロナ",
+          "price": 1000
+        },
+        {
+          "id": "beer-heineken",
+          "english": "Heineken",
+          "japanese": "ハイネケン",
+          "price": 1000
+        },
+        {
+          "id": "beer-san-miguel-light",
+          "english": "San Miguel Light",
+          "japanese": "サンミゲライト",
+          "price": 1000
+        },
+        {
+          "id": "beer-asahi-super-dry",
+          "english": "Asahi Super Dry",
+          "japanese": "アサヒスーパードライ",
+          "price": 1000
+        }
+      ]
+    },
+    "wine": {
+      "label": "Wine",
+      "items": [
+        {
+          "id": "wine-red-bottle",
+          "english": null,
+          "japanese": "エノクラレンス・ティロン",
+          "type": "Red",
+          "serving": "Bottle",
+          "price": 7000,
+          "verification": {
+            "status": "uncertain",
+            "note": "The wine name is difficult to confirm because of the image angle."
+          }
+        },
+        {
+          "id": "wine-red-glass",
+          "english": "Glass of Red Wine",
+          "japanese": "グラス",
+          "type": "Red",
+          "serving": "Glass",
+          "price": 1100
+        },
+        {
+          "id": "wine-white-bottle",
+          "english": null,
+          "japanese": "エノクラレンドル・ブラン",
+          "type": "White",
+          "serving": "Bottle",
+          "price": 7000,
+          "verification": {
+            "status": "uncertain",
+            "note": "The wine name is difficult to confirm because of the image angle."
+          }
+        },
+        {
+          "id": "wine-white-glass",
+          "english": "Glass of White Wine",
+          "japanese": "グラス",
+          "type": "White",
+          "serving": "Glass",
+          "price": 1100
+        }
+      ]
+    },
+    "food": {
+      "label": "Food",
+      "items": [
+        {
+          "id": "food-raw-ham",
+          "english": "Raw Ham",
+          "japanese": "生ハム",
+          "price": 1100
+        },
+        {
+          "id": "food-cheese-platter",
+          "english": "Cheese Platter",
+          "japanese": "チーズ盛り合わせ",
+          "price": 1100
+        },
+        {
+          "id": "food-dried-fruit",
+          "english": "Dried Fruit",
+          "japanese": "ドライフルーツ",
+          "price": 1100
+        },
+        {
+          "id": "food-chefs-choice",
+          "english": "Chef's Choice",
+          "japanese": "おまかせ",
+          "price": null,
+          "priceLabel": "ASK"
+        }
+      ]
+    },
+    "champagne": {
+      "label": "Champagne",
+      "items": [
+        {
+          "id": "champagne-moet-and-chandon",
+          "english": "Moët & Chandon",
+          "japanese": "モエ・エ・シャンドン",
+          "price": 21000
+        },
+        {
+          "id": "champagne-veuve-yellow",
+          "english": "Veuve Yellow",
+          "japanese": "ヴーヴ・イエロー",
+          "price": 26000
+        },
+        {
+          "id": "champagne-veuve-white",
+          "english": "Veuve White",
+          "japanese": "ヴーヴ・ホワイト",
+          "price": 70000,
+          "verification": {
+            "status": "approximate",
+            "note": "The handwritten price is difficult to read clearly."
+          }
+        },
+        {
+          "id": "champagne-krug",
+          "english": "Krug",
+          "japanese": "クリュッグ",
+          "price": 95000
+        },
+        {
+          "id": "champagne-belle-epoque",
+          "english": "Belle Époque",
+          "japanese": "ベル・エポック",
+          "price": 90000,
+          "verification": {
+            "status": "approximate",
+            "note": "The handwritten price is difficult to read clearly."
+          }
+        },
+        {
+          "id": "champagne-dom-perignon",
+          "english": "Dom Pérignon",
+          "japanese": "ドン・ペリニヨン",
+          "price": 75000,
+          "verification": {
+            "status": "approximate",
+            "note": "The handwritten price is difficult to read clearly."
+          }
+        },
+        {
+          "id": "champagne-armand-gold",
+          "english": "Armand Gold",
+          "japanese": "アルマンド・ゴールド",
+          "price": 220000,
+          "verification": {
+            "status": "approximate",
+            "note": "The handwritten price is difficult to read clearly."
+          }
+        },
+        {
+          "id": "champagne-dom-perignon-p2",
+          "english": "Dom Pérignon P2",
+          "japanese": "ドン・ペリニヨンP2",
+          "price": 260000,
+          "verification": {
+            "status": "approximate",
+            "note": "The handwritten price is difficult to read clearly."
+          }
+        }
+      ]
+    }
+  }
+}
